@@ -1,0 +1,8 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: 201, response {"message":"note created"}
+
+
+note over browser:
+payload {content: "chelmanitest", date: "2022-10-25T11:04:04.785Z"}
+spa.js adds the new note to the notes list and refresh the page with redrawNotes()
+
